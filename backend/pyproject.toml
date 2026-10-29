@@ -18,6 +18,7 @@ dependencies = [
 
 [project.scripts]
 wled-x = "wled_x.main:run"
+wled-x-export-layout = "wled_x.layout_export:main"
 
 [dependency-groups]
 dev = [
