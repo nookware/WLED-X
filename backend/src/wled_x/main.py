@@ -21,6 +21,7 @@ from wled_x.api import (
 from wled_x.config import settings
 from wled_x.db import init_db
 from wled_x.effects.engine import start_render_loop, stop_render_loop
+from wled_x.layout_export import router as layout_router
 
 logging.basicConfig(level=logging.INFO)
 
@@ -49,6 +50,7 @@ def create_app() -> FastAPI:
     app.include_router(routes_devices.router)
     app.include_router(routes_discovery.router)
     app.include_router(routes_fixtures.router)
+    app.include_router(layout_router)
     app.include_router(routes_effects.router)
     app.include_router(routes_preview.router)
     app.include_router(routes_scenes.router)

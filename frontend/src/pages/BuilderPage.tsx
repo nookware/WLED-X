@@ -210,6 +210,15 @@ export function BuilderPage() {
       <aside className="builder-page__panel">
         <div className="builder-panel__header">
           <span className="section-label">Fixtures</span>
+          {/* Every LED's 3D position as JSON, for tools outside WLED-X (wledx-cues). */}
+          <a
+            className="btn btn--small"
+            href="/api/layout/export"
+            download="layout.json"
+            title="Download the room layout with every LED's position"
+          >
+            Export layout
+          </a>
           <button className="btn btn--small" onClick={startNewFixture}>
             New fixture
           </button>

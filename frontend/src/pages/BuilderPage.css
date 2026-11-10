@@ -26,6 +26,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.builder-panel__header a.btn {
+  text-decoration: none;
+}
+
+.builder-panel__header .section-label {
+  margin-right: auto;
 }
 
 .builder-panel__header h2 {
